@@ -43,3 +43,7 @@ ADT LinearList is
 		void sortList(LisType &L);	
 end LinearList
 ~~~
+
+
+### 逻辑结构图
+![image](https://github.com/cikewang/DataStruct/blob/master/Z_Images/01_line_table.jpg)

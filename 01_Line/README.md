@@ -1,6 +1,9 @@
 # 线性表
 
 
+### 线性表逻辑结构示意图
+![线性表逻辑结构示意图](https://github.com/cikewang/DataStruct/blob/master/Z_Images/01_line_table.jpg)
+
 ### 线性表抽象数据类型
 
 ~~~
@@ -45,5 +48,4 @@ end LinearList
 ~~~
 
 
-### 逻辑结构图
-![image](https://github.com/cikewang/DataStruct/blob/master/Z_Images/01_line_table.jpg)
+

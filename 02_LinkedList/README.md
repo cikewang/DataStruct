@@ -47,12 +47,14 @@ struct DNode {
 	
 ### 带表头附加结点的线性链表
 >在线性表的链接存储中，为了方便在标题插入和删除结点，使得与在其他地方所做的操作相同，需要在表头结点（既保持第一个元素的结点）的前面增加一个结点，把它称为**表头附加结点**，此时表头附加结点的指针域指向表头结点，而表头指针由原来指向第一个元素的结点改为指向表头附加结点。
+
 ![带表头附加结点的线性链表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/02_linked_header.jpg)	
 	
 
 ### 循环链表
 >单链表：让表尾结点（既最后一个结点）的指针域指向表头结点或表头附加结点
 >双链表：让表尾结点的右指针域指向表头结点或表头附加结点，而让表头结点或表头附加结点的左指针域指向表尾结点
+
 ![循环链表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/02_linked_circulation.jpg)		
 	
 

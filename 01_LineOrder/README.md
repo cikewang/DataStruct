@@ -7,7 +7,7 @@
 ### 线性表抽象数据类型
 
 ~~~
-ADT LinearList is 
+ADT LineOrder is 
 	Data:
 		一个具有 ListType 类型线性表 L
 
@@ -44,7 +44,7 @@ ADT LinearList is
 
 		// 对 L 中的所有元素重新按给定条件排序
 		void sortList(LisType &L);	
-end LinearList
+end LineOrder
 ~~~
 
 

@@ -58,8 +58,8 @@ struct DNode {
 ![循环链表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/02_linked_circulation.jpg)		
 	
 
-	
-	
+### 单链表逆序
+参考：[单链表逆序](https://blog.csdn.net/lycnjupt/article/details/47103433)
 	
 	
 	

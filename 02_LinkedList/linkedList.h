@@ -26,5 +26,8 @@ bool updateList(LNode *HL, const ElemType &item);
 bool insertList(LNode* &HL, ElemType item, int pos);
 bool deleteList(LNode* &HL, ElemType &item, int pos);
 void sortList(LNode* &HL);
+void reversLinked(LNode* &HL);
+LNode *reversLinked2(LNode* HL);
+
 
 #endif /* LINKEDLIST_H_ */

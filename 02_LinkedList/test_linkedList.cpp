@@ -4,8 +4,17 @@ using namespace std;
 
 #include "linkedList.h"
 
+void testLinked();
+
+
 int main(void)
 {
+	testLinked();
+
+	return 0;
+}
+
+void testLinked() {
 	LNode *list;
 	initList(list);
 
@@ -29,5 +38,13 @@ int main(void)
 	sortList(list);
 	traverseList(list);
 
-	return 0;
+	cout << "链表逆序" << endl;
+	reversLinked(list);
+	traverseList(list);
+
+	cout << "链表递归逆序" << endl;
+	LNode *s;
+	s = reversLinked2(list);
+	traverseList(s);
 }
+

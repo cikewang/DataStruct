@@ -290,3 +290,43 @@ void sortList(LNode* &HL) {
 	HL = SL;
 }
 
+/**
+ * 单链表逆序
+ * @see https://blog.csdn.net/lycnjupt/article/details/47103433
+ */
+void reversLinked(LNode* &HL) {
+
+	if (HL == NULL) {
+		cout << "链表为空" << endl;
+		exit(1);
+	}
+
+	LNode *next= NULL;
+	LNode *prev = NULL;
+	LNode *head = HL;
+
+	while (head != NULL) {
+		next = head->next;
+		head->next = prev;
+		prev = head;
+		head = next;
+	}
+	HL = prev;
+}
+
+/**
+ * 递归逆序
+ */
+LNode *reversLinked2(LNode* HL) {
+
+	LNode *newHead= NULL;
+
+	if (HL == NULL || HL->next == NULL) {
+		return HL;
+	}
+
+	newHead = reversLinked2(HL->next);
+	HL->next->next = HL;
+	HL->next = NULL;
+	return newHead;
+}

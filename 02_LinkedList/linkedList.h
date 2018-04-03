@@ -10,7 +10,21 @@
 #include <iostream>
 using namespace std;
 
+typedef int ElemType;
+struct LNode {
+	ElemType data;
+	LNode *next;
+};
 
-
+void initList(LNode* &HL);
+void clearList(LNode* &HL);
+int lengthList(LNode *HL);
+ElemType getList(LNode *HL, int pos);
+void traverseList(LNode *HL);
+bool findList(LNode *HL, ElemType &item);
+bool updateList(LNode *HL, const ElemType &item);
+bool insertList(LNode* &HL, ElemType item, int pos);
+bool deleteList(LNode* &HL, ElemType &item, int pos);
+void sortList(LNode* &HL);
 
 #endif /* LINKEDLIST_H_ */

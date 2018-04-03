@@ -330,3 +330,18 @@ LNode *reversLinked2(LNode* HL) {
 	HL->next = NULL;
 	return newHead;
 }
+
+/**
+ * 获取列表最大元素
+ */
+ElemType getMaxItem(LNode *HL) {
+	int item = 0;
+	while (HL != NULL) {
+		if (item < HL->data) {
+			item = HL->data;
+		} else {
+			HL = HL->next;
+		}
+	}
+	return item;
+}

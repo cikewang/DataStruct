@@ -28,6 +28,6 @@ bool deleteList(LNode* &HL, ElemType &item, int pos);
 void sortList(LNode* &HL);
 void reversLinked(LNode* &HL);
 LNode *reversLinked2(LNode* HL);
-
+ElemType getMaxItem(LNode *HL);
 
 #endif /* LINKEDLIST_H_ */

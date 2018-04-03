@@ -46,5 +46,8 @@ void testLinked() {
 	LNode *s;
 	s = reversLinked2(list);
 	traverseList(s);
+
+	ElemType max_item = getMaxItem(list);
+	cout << "最大元素是：" << max_item << endl;
 }
 

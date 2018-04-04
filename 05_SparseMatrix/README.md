@@ -62,27 +62,27 @@ struct SMatrix {
 		TripleNode *vector[maxRows + 1];	// 用来保存稀疏矩阵所对应的 m个行单链表的表头指针
 	}
 	~~~
+	![带行指针向量的链接存结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/05_02.jpg)
 	
-![带行指针向量的链接存结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/05_02.jpg)	
 	* 十字连接存储
 	
-十字链接存储是既带有 ***行指针向量*** 又带 ***列指针向量*** 的链接存储，每一个三元组结点既处于同一行的单链表中，又处于同一列的单链表中。
+	十字链接存储是既带有 ***行指针向量*** 又带 ***列指针向量*** 的链接存储，每一个三元组结点既处于同一行的单链表中，又处于同一列的单链表中。
 	
-	~~~
-	struct CrossNode {
-		int row, col;		
-		ElemType val;
-		CrossNode *down, *right;
-	}
+~~~
+struct CrossNode {
+	int row, col;		
+	ElemType val;
+	CrossNode *down, *right;
+}
+
+struct CLMatrix {
+	int m, n, t;
+	CrossNode *rv[maxRows+1];
+	CorssNode *cv[maxRows+1];
+}
+~~~
 	
-	struct CLMatrix {
-		int m, n, t;
-		CrossNode *rv[maxRows+1];
-		CorssNode *cv[maxRows+1];
-	}
-	~~~
-	
-	row 、col 和 val 域分别用来存储非零元素的行号、列号、和元素值，down域用力啊存指向同一列下一个结点指针，right域用来存储指向同一行下一个结点指针，若下一个结点不存在，指针域为空值
+row 、col 和 val 域分别用来存储非零元素的行号、列号、和元素值，down域用力啊存指向同一列下一个结点指针，right域用来存储指向同一行下一个结点指针，若下一个结点不存在，指针域为空值
 	
 ![带行指针向量的链接存结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/05_03.jpg)	
 	

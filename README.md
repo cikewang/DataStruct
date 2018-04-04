@@ -4,4 +4,4 @@
 * [线性链表](https://github.com/cikewang/DataStruct/tree/master/02_LinkedList)
 * [集合](https://github.com/cikewang/DataStruct/tree/master/03_SetOrder)
 * [集合链表](https://github.com/cikewang/DataStruct/tree/master/04_SetLinked)
-
+* [稀疏矩阵](https://github.com/cikewang/DataStruct/tree/master/05_SparseMatrix)

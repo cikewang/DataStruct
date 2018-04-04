@@ -5,7 +5,7 @@
 	稀疏矩阵的三元组线性表表示 ： (i, j, Aij), i 行号， j 列号， Aij 元素值
 	
 	如图：
-![稀疏矩阵](https://github.com/cikewang/DataStruct/tree/master/Z_Images/05_sparsematrix.jpg)
+![稀疏矩阵](https://github.com/cikewang/DataStruct/blob/master/Z_Images/05_sparsematrix.jpg)
 	
 
 ### 稀疏矩阵的抽象数据类型

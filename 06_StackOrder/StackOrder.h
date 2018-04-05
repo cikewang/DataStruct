@@ -11,6 +11,7 @@
 using namespace std;
 
 typedef int ElemType;
+
 struct Stack {
 	ElemType *stack;
 	int top;

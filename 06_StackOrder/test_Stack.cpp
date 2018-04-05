@@ -7,6 +7,7 @@
 
 
 #include "StackOrder.h"
+//#include "checkBrackets.h"
 
 int main(void) {
 
@@ -28,6 +29,17 @@ int main(void) {
 
 	clearStack(s);
 
+
+
+//	cout << "check file" << endl;
+//	int check_num = bracketsCheck( (char*)"test_file.txt");
+//	cout << check_num << endl;
+
 	return 0;
+
+
 }
+
+
+
 

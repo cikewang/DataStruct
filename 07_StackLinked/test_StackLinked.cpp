@@ -6,9 +6,12 @@
  */
 
 #include "StackLinked.h"
+#include "Transform.h"
+
 
 int main(void) {
 
+	cout << "请输入整数入栈，-1 结束：" << endl;
 	Stack *s;
 	initStack(s);
 
@@ -25,6 +28,12 @@ int main(void) {
 	cout << endl;
 	clearStack(s);
 
+
+	cout << "数字转换" << endl;
+
+	Transform(10, 2);
+	Transform(10, 16);
+	Transform(10, 8);
 	return 0;
 }
 

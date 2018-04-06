@@ -8,7 +8,5 @@
 * [栈顺序表](https://github.com/cikewang/DataStruct/tree/master/06_StackOrder)
 * [栈链接表](https://github.com/cikewang/DataStruct/tree/master/07_StackLinked)
 * [递归实例](https://github.com/cikewang/DataStruct/tree/master/08_Recursion)
-	* 全排列
-	* 迷宫
-	* 汉诺塔
-* [队列]();
+	* 全排列 / 迷宫 / 汉诺塔
+* [队列]()

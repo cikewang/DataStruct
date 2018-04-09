@@ -4,7 +4,7 @@
 树（tree）是树形结构的简称。它是一种重要的非线性数据结构。
 
 ![树](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_tree_01.jpg)
-（图）树的结构
+<center> 树的结构（图1）</center >
 
 在一颗舒总，每个结点被定义为它的每个子树的根结点的前驱，而它的每个子树的根结点成为它的后继。
 

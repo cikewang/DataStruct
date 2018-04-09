@@ -49,9 +49,8 @@
 1. 二叉树的终端结点数等于双分支结点数加1
 2. 二叉树上第i层至多有  <img src="https://latex.codecogs.com/gif.latex?2^{i-1}" title="2^{i-1}" /> 个结点(<img src="https://latex.codecogs.com/gif.latex?i\geq&space;1" title="i\geq 1" />)
 3. 深度为h的二叉树至多有 <img src="https://latex.codecogs.com/gif.latex?2^h-1" title="2^h-1" /> 个结点
-	
-	###满二叉树###：当第i层的结点数为 <img src="https://latex.codecogs.com/gif.latex?2^{i-1}" title="2^{i-1}" />个时，则称此层的节点数是满的
-	###完全二叉树###：二叉树中，除最后一层外，若其余层都是满的，并且最后一层是满的或者缺少连续若干个结点。
+	* ###满二叉树###：当第i层的结点数为 <img src="https://latex.codecogs.com/gif.latex?2^{i-1}" title="2^{i-1}" />个时，则称此层的节点数是满的
+	* ###完全二叉树###：二叉树中，除最后一层外，若其余层都是满的，并且最后一层是满的或者缺少连续若干个结点。
 
 ### 二叉树的抽象数据类型
 ~~~

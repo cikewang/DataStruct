@@ -43,3 +43,43 @@
 
 
 ### 二叉树
+	二叉树（binary tree）是指树的度为2的有序树。
+
+### 二叉树的性质
+1. 二叉树的终端结点数等于双分支结点数加1
+2. 二叉树上第i层至多有  <img src="https://latex.codecogs.com/gif.latex?2^{i-1}" title="2^{i-1}" /> 个结点(<img src="https://latex.codecogs.com/gif.latex?i\geq&space;1" title="i\geq 1" />)
+3. 深度为h的二叉树至多有 <img src="https://latex.codecogs.com/gif.latex?2^h-1" title="2^h-1" /> 个结点
+	###满二叉树###：当第i层的结点数为 <img src="https://latex.codecogs.com/gif.latex?2^{i-1}" title="2^{i-1}" />个时，则称此层的节点数是满的
+	###完全二叉树###：二叉树中，除最后一层外，若其余层都是满的，并且最后一层是满的或者缺少连续若干个结点。
+
+### 二叉树的抽象数据类型
+~~~
+DATA BinaryTree is
+	Data:
+		
+	Operations
+		// 初始化二叉树，既把它置为空
+		void initBTree(BTreeType &BT);
+		// 跟进广义表表示的二叉树简历对应的存储结构
+		void createBTree(BTreeType &BT, char *a);
+		// 判断一个二叉树是否为空
+		bool emptyBTree(BTreeType &BT);
+		// 按照一定次序遍历一颗二叉树
+		void traverseBTree(BTreeType &BT);
+		// 从二叉树中查找为值为 item 的结点，若存在该结点则有 item 带回它的完整值
+		bool findBTree(BTreeType &BT, ElemType &item);
+		// 求出一颗二叉树的深度
+		int btreeDepth(BTreeType &BT);
+		// 按照树的一种表示方式输出一颗二叉树
+		void prointBTree(BTreeType &BT);
+		// 清楚二叉树中的所有结点，使之变为一颗空数
+		void clearBTree(BTreeType &BT); 
+end BinaryTree
+~~~
+
+
+
+
+
+
+

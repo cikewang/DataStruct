@@ -6,7 +6,7 @@
 ![树](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_tree_01.jpg)
 <center> 树的结构（图1）</center >
 
-在一颗舒总，每个结点被定义为它的每个子树的根结点的前驱，而它的每个子树的根结点成为它的后继。
+在一颗树中，每个结点被定义为它的每个子树的根结点的前驱，而它的每个子树的根结点成为它的后继。
 
 ### 树的基本术语
 * 结点的度和树的度<br>
@@ -90,17 +90,25 @@ end BinaryTree
 1. 顺序存储结构
 	* 若一个结点为i，则 左孩子为 2i，右孩子为 2i+1 <br>
 ![二叉树顺序存储结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_02.jpg)<br>
-二叉树顺序存储结构图
+二叉树顺序存储结构(图2)
 
 2. 链接存储结构
 	* 结点中设置3域：值域、左指针、右指针 <br>
 ![二叉树链接存储结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_03.jpg)<br>
-二叉树链接存储结构图	
+二叉树链接存储结构 (图3)	
 
 ### 二叉树遍历
-1. 前序遍历 （根左右）
-		
-2. 中序遍历 （左根右）
-3. 后续遍历 （左右根）
+
+![二叉树](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_tree_02.jpg)<br>
+(图4)
+
+1. 前序遍历 （根左右） : A B C D E F G
+2. 中序遍历 （左根右） : C B D A E G F
+3. 后续遍历 （左右根） : C D B G F E A
+
+时间复杂度 O(n)，n表示二叉树中结点的个数。
+
+
+
 
 

@@ -37,7 +37,7 @@
 	
 ### 树的性质
 1. 树中结点数等于所有结点的度数加1
-2. 度为k的树中第i层上至多有  k^i-1 <img src="https://latex.codecogs.com/gif.latex?k^i-1" title="k^i-1" />
+2. 度为k的树中第i层上至多有  k^{i-1} <img src="https://latex.codecogs.com/gif.latex?k^{i-1}" title="k^{i-1}" />
 3. 深度为h的k叉树至多有 $\frac{k^h-1}{k-1}$
 4. 具有n个结点的k叉树的最小深度为
 

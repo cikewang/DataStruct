@@ -88,12 +88,12 @@ end BinaryTree
 
 ### 二叉树的存储结构
 1. 顺序存储结构
-	* 若一个结点为i，则 左孩子为 2i，右孩子为 2i+1
+	* 若一个结点为i，则 左孩子为 2i，右孩子为 2i+1 <br>
 ![二叉树顺序存储结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_02.jpg)<br>
 二叉树顺序存储结构图
 
 2. 链接存储结构
-	* 结点中设置3域：值域、左指针、右指针
+	* 结点中设置3域：值域、左指针、右指针 <br>
 ![二叉树链接存储结构](https://github.com/cikewang/DataStruct/blob/master/Z_Images/11_03.jpg)<br>
 二叉树链接存储结构图	
 

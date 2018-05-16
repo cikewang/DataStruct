@@ -11,8 +11,12 @@
 二叉树搜索树，其结点按照中序遍历得到结点必然是一个有序序列
 ![树](https://github.com/cikewang/DataStruct/blob/master/Z_Images/12_tree_01.jpg)
 <center> 二叉搜索树（图1）</center >
+
 中序遍历得到：12， 15， 18， 23， 26， 30， 52， 63， 74
 
 
+#### 删除结点
+![删除结点](https://github.com/cikewang/DataStruct/blob/master/Z_Images/12_tree_del_1.jpg)
+![删除结点](https://github.com/cikewang/DataStruct/blob/master/Z_Images/12_tree_del_2.jpg)
 
 

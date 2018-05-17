@@ -12,3 +12,5 @@
 * [队列顺序表](https://github.com/cikewang/DataStruct/tree/master/09_QueueOrder)
 * [队列链接表](https://github.com/cikewang/DataStruct/tree/master/10_QueueLinked)
 * [二叉树](https://github.com/cikewang/DataStruct/tree/master/11_Tree)
+* [二叉搜索树](https://github.com/cikewang/DataStruct/tree/master/12_BinaryTree)
+

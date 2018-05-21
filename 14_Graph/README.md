@@ -86,9 +86,16 @@ end graph
 ![邻接表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_4.jpg)
 
 ##### 边集数组
-
+![边集数组](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_5.jpg)
 
 ### 图的遍历
+
+##### 深度优先遍历
+深度优先遍历（depth-first search）遍历类似于树的先根遍历，它是一个递归过程
+
+##### 广度优先遍历
+广度优先遍历（breadth-first search）遍历类似于对树的按层遍历
+
 
 
 

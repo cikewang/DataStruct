@@ -3,7 +3,7 @@
 
 
 ![图](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_graph_1.jpg)
-
+图1
 
 ### 图的基本术语
 
@@ -77,7 +77,8 @@ end graph
 图的存储结构又称图的存储表示或图的表示，图的表示方法主要有，邻接矩阵、邻接表和边集数组。
 
 ##### 邻接矩阵
-	
+参考图1
+![邻接矩阵](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_2.jpg)
 
 ##### 邻接表
 

@@ -81,7 +81,9 @@ end graph
 ![邻接矩阵](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_2.jpg)
 
 ##### 邻接表
-
+参考图1
+![邻接表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_3.jpg)
+![邻接表](https://github.com/cikewang/DataStruct/blob/master/Z_Images/14_4.jpg)
 
 ##### 边集数组
 

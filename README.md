@@ -16,5 +16,9 @@
 * [堆](https://github.com/cikewang/DataStruct/tree/master/13_Heap)
 * [图](https://github.com/cikewang/DataStruct/tree/master/14_Graph)
 * [图的应用](https://github.com/cikewang/DataStruct/tree/master/15_Graph02)
+* [搜索](https://github.com/cikewang/DataStruct/tree/master/16_Search)
+* [排序](https://github.com/cikewang/DataStruct/tree/master/17_Sorting)
 
 
+
+ 

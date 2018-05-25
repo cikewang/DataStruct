@@ -217,8 +217,80 @@ void QuickSort(ElemType A[], int s, int t) {
 
 > 归并（merge）就是将两个或多个有序表合并成一个有序表的过程。若将两个有序表合并成一个有序表则称为二路归并。
 
-~~~
 
+~~~
+// 把 A 数组中两个相邻的有序表 A[s]~A[m] 和 A[m+1]~A[t]
+// 归并为 R 数组中对应位置上的一个有序表 R[s]~R[t]
+void TwoMerge(ElemType A[], ElemType R[], int s, int m, int t) {
+	int i, j, k;
+	// 分别给指示每个有序元素位置的指针赋初值
+	i=s; j=m+1; k=s;
+	// 两个有序表中同时存在为归并元素时的处理过程
+	while (i<=m && j<=t) {
+		if (A[i].data <= A[j].data) {
+			R[k] = A[i];
+			i++;
+			k++;
+		} else {
+			R[k] = A[j];
+			j++;
+			k++;
+		}
+	}
+	// 对第一个有序表中存在的未归并元素进行处理
+	while (i<=m) {
+		R[k] = A[i];
+		i++;
+		k++;
+	}
+	// 对第二个有序元素中存在的为归并元素进行处理
+	while (j<=t) {
+		R[k] = A[j];
+		j++;
+		k++;
+	}
+}
+
+// 把数组 A[n]中每个长度为 len 的有序表两两归并到数组 R[n]中
+void MergePass(ElemType A[], ElemType R[], int n, int len) {
+	// p 为每一个对待合并表的第一个元素的下标，初值为 0
+	int p=0;
+	// 两个归并长度为 len 的有序表
+	while (p+2*len-1 <= n-1) {
+		TwoMerge(A, R, p, p+len-1, p+2*len-1);
+		p += 2*len;
+	}
+	// 归并最后两个长度不等的有序表
+	if (p+len-1 < n-1) {
+		TwoMerge(A, R, p, p+len-1, n-1);
+	} else {
+		// 把剩下的最后一个有序表复制到 R中
+		for (int i=p; i<=n-1; i++) {
+			R[i] = A[i];	
+		}
+	}
+}
+
+// 采用归并排序的方法对数组 A中的n个记录进行排序
+void MergeSort(ElemType A[], int n) {
+	// 定义长度为 n的辅助数组 R
+	ElemType *R = new ElemType[n];
+	// 从有序表长度为 1 开始
+	int len=1;
+	while (len<n) {
+		// 从 A 归并到 R中，得到每个有序表的长度为 2*len
+		MergePass(A, R, n, len);
+		// 修改 len 的值为 R中的每个有序表的长度
+		len *= 2;
+		// 从 R归并到 A中，得到每个有序表长度为 2*len
+		MergePass(R, A, n, len);
+		// 修改 len的值为A中的每个有序表长度
+		len *= 2;
+	}
+	// 释放 R数组中所占用的动态存储空间
+	delete []R;
+	
+}
 ~~~
 
 
